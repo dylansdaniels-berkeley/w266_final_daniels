@@ -1,0 +1,106 @@
+# TABLE 1
+
+# TABLE 2
+
+\begin{table}[htbp]
+\centering
+\textbf{A. Best Run Averaged Across Abstracts}
+\begin{tabular}{lcccc}
+\toprule
+Model & rouge1 & rouge2 & rougeL & rougeLsum \\
+\midrule
+base BART & 0.2400 & 0.0641 & 0.1647 & 0.1647 \\
+FTO & 0.4192 & 0.1778 & 0.3579 & 0.3579 \\
+MLM-FT (3) & 0.4140 & 0.1755 & 0.3337 & 0.3337 \\
+MLM-FT (6) & 0.4212 & 0.1635 & 0.3396 & 0.3396 \\
+\bottomrule
+\end{tabular}
+\label{tab:my-table-A}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\textbf{B. Average Across All Runs and Abstracts}
+\begin{tabular}{lcccc}
+\toprule
+Model & rouge1 & rouge2 & rougeL & rougeLsum \\
+\midrule
+base BART & 0.2024 & 0.0438 & 0.1441 & 0.1441 \\
+FTO & 0.3533 & 0.1346 & 0.2939 & 0.2939 \\
+MLM-FT (3) & 0.3157 & 0.1099 & 0.2567 & 0.2567 \\
+MLM-FT (6) & 0.3195 & 0.1103 & 0.2539 & 0.2539 \\
+\bottomrule
+\end{tabular}
+\label{tab:my-table-B}
+\end{table}
+
+# TABLE 3
+\begin{table}[htbp]
+    \centering
+    \label{tab:metadata-proportion}
+    \huge
+    \begin{tabular}{@{}lcc@{}}
+      \toprule
+      Metadata & Runs & Proportion\\
+      Set & (n) & MLM-FT \\
+      \midrule
+      A & 10 & 0.5375 \\
+      B & 5 & 0.5250 \\
+      C & 5 & 0.4875 \\
+      D & 5 & 0.5000 \\
+      \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \label{tab:metadata-proportion}
+    \huge
+    \begin{tabular}{@{}lcc@{}}
+      \toprule
+      Metadata & Runs & Proportion\\
+      Set & (n) & MLM-FT \\
+      \midrule
+      A & 6 & 0.5417 \\
+      B & 3 & 0.5000 \\
+      C & 3 & 0.4583 \\
+      D & 3 & 0.4583 \\
+      \bottomrule
+    \end{tabular}
+\end{table}
+
+# TABLE 4
+
+# TABLE A2
+
+\begin{table}[htbp]
+    \centering
+    \textbf{A. Best Run Averaged Across Abstracts}
+    \label{tab:model-metrics-2}
+    \begin{tabular}{@{}lccc@{}}
+      \toprule
+      Model & Precision & Recall & F1 \\
+      \midrule
+      base\_bart\_model & 0.847459 & 0.876872 & 0.859904 \\
+      finetuned\_model & 0.884751 & 0.898202 & 0.890938 \\
+      mlm\_ft\_3e\_model & 0.889835 & 0.897664 & 0.892372 \\
+      mlm\_ft\_6e\_model & 0.891861 & 0.897321 & 0.892154 \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+  
+  \begin{table}[htbp]
+    \centering
+    \textbf{B. Average Across All Runs and Abstracts}
+    \label{tab:model-metrics-1}
+    \begin{tabular}{@{}lccc@{}}
+      \toprule
+      Model & Precision & Recall & F1 \\
+      \midrule
+      base\_bart\_model & 0.839080 & 0.863863 & 0.851181 \\
+      finetuned\_model & 0.872938 & 0.886233 & 0.879343 \\
+      mlm\_ft\_3e\_model & 0.873287 & 0.880210 & 0.876595 \\
+      mlm\_ft\_6e\_model & 0.874708 & 0.883119 & 0.878798 \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
